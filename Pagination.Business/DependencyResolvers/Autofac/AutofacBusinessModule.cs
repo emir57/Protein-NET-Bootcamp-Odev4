@@ -24,8 +24,12 @@ namespace Pagination.Business.DependencyResolvers.Autofac
             builder.RegisterType<DpPersonDal>().As<IPersonDal>();
             #endregion
 
-            #region Cache
+            #region Redis Cache
             builder.RegisterType<RedisCacheManager>().As<ICacheManager>();
+            #endregion
+
+            #region Memory Cache(Optional)
+            //builder.RegisterType<MemoryCache>().As<ICacheManager>();
             #endregion
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
