@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pagination.DataAccess\Pagination.DataAccess.csproj" />
+    <ProjectReference Include="..\Pagination.Dto\Pagination.Dto.csproj" />
+    <ProjectReference Include="..\Pagination.Entity\Pagination.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
