@@ -31,6 +31,10 @@ builder.Services.AddDependencyResolvers(
     new CoreModule());
 #endregion
 
+#region Microsoft MemoryCache(Optional)
+//builder.Services.AddMemoryCache();
+#endregion
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
